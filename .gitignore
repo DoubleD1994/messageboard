@@ -1,0 +1,8 @@
+*.swp
+*~
+.settings/
+.classpath
+.project
+.factorypath
+.idea/
+target/
