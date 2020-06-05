@@ -4,17 +4,23 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MessagesComponent } from './messages.component';
-import {WebService} from './web.service';
+import { WebService } from './web.service';
+import { NewMessageComponent } from './new-message.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { HttpClientModule } from '@angular/common/http';
+
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MessagesComponent
+    MessagesComponent,
+    NewMessageComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +28,10 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MatButtonModule,
     MatCardModule,
-    HttpClientModule
+    MatInputModule,
+    MatFormFieldModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     WebService
