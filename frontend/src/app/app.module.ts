@@ -10,6 +10,7 @@ import { NewMessageComponent } from './new-message.component';
 import { NavComponent } from './nav.component';
 import { HomeComponent } from './home.component';
 import { RegisterComponent } from './register.component';
+import { AuthService } from './auth.service';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
@@ -54,7 +55,8 @@ var routes = [
     RouterModule.forRoot(routes)
   ],
   providers: [
-    WebService
+    WebService,
+    AuthService
   ],
   bootstrap: [AppComponent]
 })
