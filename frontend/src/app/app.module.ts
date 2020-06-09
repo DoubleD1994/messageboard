@@ -12,6 +12,7 @@ import { HomeComponent } from './home.component';
 import { RegisterComponent } from './register.component';
 import { AuthService } from './auth.service';
 import { LoginComponent } from './login.component';
+import { UserComponent } from './user.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
@@ -30,6 +31,7 @@ var routes = [
   {path: 'messages/:name', component: MessagesComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'login', component: LoginComponent},
+  {path: 'user', component: UserComponent},
 ];
 
 @NgModule({
@@ -40,7 +42,8 @@ var routes = [
     NavComponent,
     HomeComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
